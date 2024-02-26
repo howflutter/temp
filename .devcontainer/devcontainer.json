@@ -3,22 +3,25 @@
 {
 	"name": "Go",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/go:1-1.21-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/hugo:1": {
 			"extended": true,
 			"version": "latest"
-		}
-	}
+		},
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	
+	// Use 'postCreateCommand' to run commands after the container is created.
+	//
+	// Install PostCSS.  More info: https://www.docsy.dev/docs/get-started/other-options/#install-postcss
+	"postCreateCommand": "npm install --save-dev autoprefixer postcss-cli postcss"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "go version",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
