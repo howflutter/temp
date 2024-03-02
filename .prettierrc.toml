@@ -1,0 +1,12 @@
+# For format details, see https://prettier.io/docs/en/configuration.
+
+# For plugin details, see https://prettier.io/docs/en/plugins.
+plugins = ["prettier-plugin-go-template"]
+
+[[overrides]]
+files = ["*.html"]
+
+[overrides.options]
+parser = "go-template"
+
+goTemplateBracketSpacing = true

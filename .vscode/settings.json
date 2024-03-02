@@ -1,0 +1,11 @@
+// For setting details, see https://code.visualstudio.com/docs/getstarted/settings.
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+}

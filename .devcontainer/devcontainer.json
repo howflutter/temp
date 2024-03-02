@@ -11,21 +11,24 @@
 		},
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
-	
 	// Use 'postCreateCommand' to run commands after the container is created.
 	//
 	// Install PostCSS.  More info: https://www.docsy.dev/docs/get-started/other-options/#install-postcss
-	"postCreateCommand": "npm install --save-dev autoprefixer postcss-cli postcss"
-
+	// Install Prettier Formatter plugin for go template files.  More info: https://github.com/NiklasPor/prettier-plugin-go-template
+	"postCreateCommand": "npm install --save-dev autoprefixer postcss-cli postcss prettier-plugin-go-template",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"jinliming2.vscode-go-template"
+			]
+		}
+	}
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
