@@ -1,5 +1,10 @@
-/*
+$primary: #13b9fd !default;
+$front-color-base: #f5f6f7 !default;
 
-Add styles or override variables from the theme here.
+$link-color: $primary !default;
 
-*/
+$navbar-dark-backgound: #242526 !default;
+$navbar-dark-color: $front-color-base !default;
+$navbar-dark-hover-color: $primary !default;
+$navbar-dark-active-color: $primary !default;
+$navbar-dark-brand-color: $front-color-base !default;
